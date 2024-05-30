@@ -1,0 +1,50 @@
+
+.main{
+    display: flex;
+    /* background: rgb(21, 53, 66); */
+    align-items: center;
+    /* position: ; */
+    z-index: -1;
+ 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+h2{
+    padding-top: 150px;
+}
+.card{
+    color: white;
+    background: linear-gradient(red,blue,gray);
+}
+button{
+    border: 1px solid transparent;
+    background: rgb(58, 75, 24);
+    border-radius: 20px;
+    width: auto;
+    margin: 10px;
+    transition:background .8s, color 0.8s;
+    padding: 6px;
+}
+a{
+    text-decoration: none;
+    background: none;
+}
+button:hover{
+    background: gray;
+    color: rgb(31, 21, 21);
+}
+
+/* Media query for small devices below 768px */
+@media (max-width: 768px) {
+    .main {
+        gap: 16px; /* Add padding */
+    /* background: rgb(21, 53, 66); */
+    z-index: -1;
+ 
+    flex-wrap: wrap;
+    }
+
+    h2 {
+        padding-top: 350px; /* Adjust padding */
+    }
+}

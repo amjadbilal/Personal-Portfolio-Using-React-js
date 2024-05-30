@@ -1,0 +1,107 @@
+.mainContainer {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    align-items: center;
+}
+
+.mainleftContent {
+    width: 60%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    text-align: start;
+    line-height: 40px;
+    text-indent: 10rem;
+
+}
+ 
+p{
+    font-size: large;
+    /* text-align: left; */
+}
+ 
+.home-heading{
+    padding:  20px;
+    align-items: center;
+    text-transform:capitalize;
+}
+ 
+#name-heading{
+font-size: 35px;
+}
+marquee{
+    font-size: 35px;
+    text-transform:capitalize ;
+}
+
+
+.socialIcons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+a img{
+    width: 30px;
+
+    height: 5vh;
+    transition:width 0.1s, color 0.8s;
+}
+a img:hover{
+    width: 35px;
+    background: rgb(204, 153, 153);
+
+}
+button{
+    border: 1px solid transparent;
+    background: rgb(58, 75, 24);
+    border-radius: 20px;
+    width: auto;
+    margin: 10px;
+    transition:background .8s, color 0.8s;
+    padding: 6px;
+}
+button:hover{
+    background: gray;
+    color: rgb(31, 21, 21);
+}
+.PersonalPic {
+    width: 40%;
+    padding-top: 160px;
+}
+
+img {
+    border: 1px solid transparent;
+    border-radius: 300px;
+    width: 300px;
+    height: 350px;
+
+}
+
+
+/* Media query for a maximum width of 768px */
+@media (max-width: 768px) {
+    .mainContainer {
+        display: flex;
+        /* justify-content: center; */
+        width: 100%;
+        align-items: center;
+
+    
+    }
+    
+    .mainleftContent {
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        text-indent: 0;
+    }
+
+    img {
+        width: 180px;
+        height: 220px;
+    }
+}
